@@ -28,6 +28,8 @@ if __name__ == "__main__":
             for file in all_files:
                 if file.lower().startswith(which_files):
                     new_files.append(file)
+        else:
+            new_files = all_files
     except FileNotFoundError:
         print(f"{file_path} is not a valid path. Please try again...")
 
